@@ -1,0 +1,109 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size:16px;
+	font-family: 'Ubuntu', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+label, input{
+  display: block;
+
+}
+p, a{
+	font-size: 1em;
+}
+
+/*for mobile users*/
+
+#main-content{
+	width:auto%;
+	padding:25px 30px 0 30px;
+
+}
+h1{
+	font-size: 24px;
+	width:170px;
+	margin: auto;
+}
+label{
+	margin:15px 0 4px 0;
+}
+input, select{
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	box-sizing:content-box;
+	border-radius: 4px;
+	height: 25px;
+	border:1px solid #16262E;
+	padding: 4px 0 1px 11px;
+	width: 100%;
+}
+#split{
+	margin-bottom:25px;
+}
+#calculate_btn{
+	width: 50%;
+	margin:auto;
+}
+#service{
+	padding: 4px 0 1px 8px;
+}
+#resultContainer{
+  display:none;
+	font-size:18px;
+	text-align:center;
+}
+.result_desc{
+	margin-top:15px;
+}
+form{
+
+}
+/*larger screens,change later
+@media only screen and (min-width: 768px){
+	#main-content{
+		width:768px;
+		margin:auto;
+	}
+}
+*/

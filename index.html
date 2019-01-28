@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split the Check</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <script src="calculate.js"></script>
+</head>
+<body>
+<div id="main-content">
+  <h1>Split the Check</h1>
+	<div id="logo_toggle" onclick="toggle()">
+  <form>
+  <label for="total_cost">What's the amount on the check?</label>
+  <input type = "text" id="total_cost" name="total_cost" placeholder="0.00">
+  <label for = "service">How was your service?</label>
+  <select id="service">
+    <option value=".25">Excellent (25%)</option>
+    <option value=".2">Satisfactory (20%)</option>
+    <option value=".15">Poor (15%)</option>
+  </select>
+  <label for = "split">Between how many people?</label>
+  <input type = "number" id="split" name="split" placeholder="1">
+  <input type = "button" id="calculate_btn" value="Calculate" onclick="calculate()">
+  </form>
+
+  <div id="resultContainer">
+
+    <p class="result_desc">Everyone fork over:</p>
+    <p id="totalPerPerson"class="result_text"></p>
+
+    <p class="result_desc">The tip when split:</p>
+    <p id="tipPerPerson" class="result_text"></p>
+
+    <p class="result_desc">Total Tip:</p>
+    <p id="totalTip" class="result_text"></p>
+
+    <p class="result_desc">Total Cost:</p>
+    <p id="totalCost" class="result_text"></p>
+
+  </div>
+</div>
+</body>
+</html>
